@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main2Activity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:id="@+id/edittxt" />
+    <Button
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:id="@+id/clearbtn"
+        android:onClick="clearButton"
+        android:layout_alignRight="@+id/edittxt"
+        android:layout_alignBottom="@+id/edittxt"
+        android:layout_alignEnd="@+id/edittxt"
+        android:background="@drawable/ic_clear_black_24dp"/>
+    <Button
+        android:id="@+id/sv"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittxt"
+        android:text="Save"
+        android:onClick="saveButton"/>
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Toast"
+        android:id="@+id/tst"
+        android:layout_below="@+id/sv"
+        android:onClick="toastButton"
+        android:background="@drawable/hover"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragments"
+        android:id="@+id/fragbtn"
+        android:layout_alignParentBottom="true"
+        android:onClick="fragBtn"/>
+</RelativeLayout>
